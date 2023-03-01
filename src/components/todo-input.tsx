@@ -13,11 +13,6 @@ const TodoInput: React.FC = () => {
     return (
         <form className="formValidation" onSubmit={(e) => {
             e.preventDefault();
-            // if (value.title.length > 0) {
-            //     isTitleError = false;
-            //     title!.style.display = "block";
-            // }
-            // console.log("isTitleError", isTitleError);
             if (value.title.length === 0) {
                 setErrorMessage(true);
                 title!.style.display = "block";
